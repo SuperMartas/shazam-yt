@@ -9,6 +9,8 @@
 // @license      MIT
 // @homepageURL  https://github.com/SuperMartas/shazam-yt
 // @supportURL   https://github.com/SuperMartas/shazam-yt/issues
+// @author       SuperMartas
+// @icon         data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f03'%3E%3Ccircle cx='12' cy='12' r='6' fill='white'/%3E%3Cpath d='M12 6.81c-2.86 0-5.19 2.33-5.19 5.19s2.33 5.19 5.19 5.19 5.19-2.33 5.19-5.19S14.86 6.81 12 6.81m-1.93 8.15V9.05L15.18 12l-5.11 2.95Z'/%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 15.92c-3.27 0-5.92-2.65-5.92-5.92S8.73 6.08 12 6.08s5.92 2.65 5.92 5.92-2.65 5.92-5.92 5.92'/%3E%3C/svg%3E
 // @downloadURL  https://raw.githubusercontent.com/SuperMartas/shazam-yt/master/shazam-yt.user.js
 // @updateURL    https://raw.githubusercontent.com/SuperMartas/shazam-yt/master/shazam-yt.user.js
 // ==/UserScript==
