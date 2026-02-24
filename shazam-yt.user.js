@@ -3,7 +3,7 @@
 // @namespace    https://github.com/sm/shazam-yt
 // @version      1.0
 // @description  Replace Apple Music button with YouTube Music on Shazam song pages
-// @match        https://www.shazam.com/song/*
+// @match        https://www.shazam.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -60,7 +60,7 @@
   }
 
   const observer = new MutationObserver(() => {
-    if (replaceButton()) observer.disconnect();
+    replaceButton();
   });
 
   observer.observe(document.body, { childList: true, subtree: true });
