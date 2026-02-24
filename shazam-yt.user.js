@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shazam - YouTube Music Button
 // @namespace    https://supermartas.cz
-// @version      1.0.1
+// @version      1.1.0
 // @description  Replace Apple Music button with YouTube Music on Shazam song pages
 // @match        https://www.shazam.com/*
 // @grant        none
