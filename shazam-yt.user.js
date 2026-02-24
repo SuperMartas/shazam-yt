@@ -9,8 +9,8 @@
 // @license      MIT
 // @homepageURL  https://github.com/SuperMartas/shazam-yt
 // @supportURL   https://github.com/SuperMartas/shazam-yt/issues
-// @downloadURL  https://raw.githubusercontent.com/SuperMartas/shazam-yt/main/shazam-yt.user.js
-// @updateURL    https://raw.githubusercontent.com/SuperMartas/shazam-yt/main/shazam-yt.user.js
+// @downloadURL  https://raw.githubusercontent.com/SuperMartas/shazam-yt/master/shazam-yt.user.js
+// @updateURL    https://raw.githubusercontent.com/SuperMartas/shazam-yt/master/shazam-yt.user.js
 // ==/UserScript==
 
 (function () {
