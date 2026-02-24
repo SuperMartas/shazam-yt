@@ -28,6 +28,11 @@
     const songQuery = getSongInfo();
     if (!songQuery) return false;
 
+    // Capture class names from existing elements before replacing them
+    const origLink = container.querySelector('a[class*="AppleMusicLink_link"]');
+    const origWrapper = container.querySelector('div[class*="AppleMusicButton_buttonWrapper"]');
+    const origLabel = container.querySelector('span[class*="Text-module_text"]');
+
     const ytMusicUrl = 'https://music.youtube.com/search?q=' + encodeURIComponent(songQuery);
 
     const link = document.createElement('a');
@@ -36,11 +41,10 @@
     link.rel = 'noopener';
     link.setAttribute('aria-label', 'Open in YouTube Music');
     link.setAttribute(MARKER, '');
-    // Inline styles replace fragile CSS-module class names
-    link.style.cssText = 'display:flex;flex-direction:column;margin-top:20px;gap:10px;cursor:pointer;text-decoration:none;';
+    if (origLink) link.className = origLink.className;
 
     const wrapper = document.createElement('div');
-    wrapper.style.cssText = 'display:flex;align-items:center;justify-content:center;padding:15px 20px;background-color:rgb(36,36,36);border-radius:50px;gap:10px;cursor:pointer;';
+    if (origWrapper) wrapper.className = origWrapper.className;
 
     const iconWrapper = document.createElement('div');
     iconWrapper.style.cssText = 'display:flex;align-items:center;justify-content:center;margin-right:6px;';
@@ -49,7 +53,7 @@
     </svg>`;
 
     const label = document.createElement('span');
-    label.style.cssText = 'color:white;font-size:16px;font-weight:400;font-family:NeueMontreal,Arial,sans-serif;text-decoration:none;text-align:center;';
+    if (origLabel) label.className = origLabel.className;
     label.textContent = 'Open in YouTube Music';
 
     wrapper.appendChild(iconWrapper);
