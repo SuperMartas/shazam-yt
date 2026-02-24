@@ -1,10 +1,16 @@
 // ==UserScript==
 // @name         Shazam - YouTube Music Button
-// @namespace    https://github.com/sm/shazam-yt
+// @namespace    https://supermartas.cz
 // @version      1.0.1
 // @description  Replace Apple Music button with YouTube Music on Shazam song pages
 // @match        https://www.shazam.com/*
 // @grant        none
+// @run-at       document-idle
+// @license      MIT
+// @homepageURL  https://github.com/SuperMartas/shazam-yt
+// @supportURL   https://github.com/SuperMartas/shazam-yt/issues
+// @downloadURL  https://raw.githubusercontent.com/SuperMartas/shazam-yt/main/shazam-yt.user.js
+// @updateURL    https://raw.githubusercontent.com/SuperMartas/shazam-yt/main/shazam-yt.user.js
 // ==/UserScript==
 
 (function () {
@@ -26,7 +32,7 @@
     if (!container || container.querySelector(`[${MARKER}]`)) return false;
 
     const songQuery = getSongInfo();
-    if (!songQuery) return false;
+    if (!songQuery || !songQuery.length) return false;
 
     // Capture class names from existing elements before replacing them
     const origLink = container.querySelector('a[class*="AppleMusicLink_link"]');
