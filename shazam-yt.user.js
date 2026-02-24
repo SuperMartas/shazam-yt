@@ -42,9 +42,9 @@
     wrapper.className = 'AppleMusicButton_buttonWrapper__qFg_u';
 
     const iconWrapper = document.createElement('div');
-    iconWrapper.className = 'AppleMusicButton_appleMusicIconWrapper__RaJW6';
-    iconWrapper.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:12px;height:12px;fill:white;">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+    iconWrapper.style.cssText = 'display:flex;align-items:center;justify-content:center;margin-right:6px;';
+    iconWrapper.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:24px;height:24px;fill:#f03;">
+      <circle cx="12" cy="12" r="6" fill="white"/><path d="M12 6.81c-2.86 0-5.19 2.33-5.19 5.19s2.33 5.19 5.19 5.19 5.19-2.33 5.19-5.19S14.86 6.81 12 6.81m-1.93 8.15V9.05L15.18 12l-5.11 2.95Z"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 15.92c-3.27 0-5.92-2.65-5.92-5.92S8.73 6.08 12 6.08s5.92 2.65 5.92 5.92-2.65 5.92-5.92 5.92"/>
     </svg>`;
 
     const label = document.createElement('span');
